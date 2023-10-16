@@ -1,3 +1,5 @@
+package board;
+
 /**
  * This interface is meant to be implemented by board class
  * it holds methods used in board manipulation
@@ -58,7 +60,7 @@ public interface BoardOperations {
 	boolean isOWinner();
 	
 	/**
-	 * Board makes a copy of a current board. This is important
+	 * board.Board makes a copy of a current board. This is important
 	 * because the board is going to be passed as reference and every
 	 * next change will change the original board. Copies will have to 
 	 * be made to preserve a specific board state in the algorithm
@@ -89,8 +91,7 @@ public interface BoardOperations {
 	
 	/**
 	 * After creating a copy of this board. The copy should be added as next board
-	 */
-	void setNextBoards();
+	 *
 	
 	/**
 	 * An array of child boards with all possible mark placements

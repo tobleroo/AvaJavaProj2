@@ -1,5 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
+package utils;
+
+import board.Board;
 
 public class MinMax {
 

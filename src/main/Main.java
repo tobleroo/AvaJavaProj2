@@ -1,4 +1,8 @@
-import java.util.Random;
+package main;
+
+import utils.MinMax;
+import board.Board;
+
 import java.util.Scanner;
 
 public class Main {

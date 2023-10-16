@@ -1,4 +1,6 @@
-public class Board implements BoardOperations{
+package board;
+
+public class Board implements BoardOperations {
 
     private char [][] board;
     private Board[] nextBoards;
@@ -114,10 +116,10 @@ public class Board implements BoardOperations{
 
     @Override
     public Board copyBoard() {
-        // Create a new Board object.
+        // Create a new board.Board object.
         Board childBoard = new Board();
 
-        // Copy the state of the current Board object to the new object.
+        // Copy the state of the current board.Board object to the new object.
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 childBoard.board[i][j] = this.board[i][j];
@@ -161,10 +163,6 @@ public class Board implements BoardOperations{
         this.board[lastMoveRow][lastMoveCol] = '-';
     }
 
-    @Override
-    public void setNextBoards() {
-
-    }
 
     @Override
     public Board[] getChildBoards() {
@@ -195,10 +193,6 @@ public class Board implements BoardOperations{
                 }
             }
         }
-    }
-
-    public int getLastMove() {
-        return lastMoveRow * 3 + lastMoveCol;
     }
 
     public void setPlayerTurn(String playerName){
