@@ -10,14 +10,7 @@ package board;
  */
 public interface BoardOperations {
 
-	/**
-	 * Method should check if the location row/col on the board
-	 * is a valid move. Can x or o be placed on a cell or 
-	 * is it already taken
-	 * @param x
-	 * @param o
-	 * @return
-	 */
+
 	boolean isValidMove(int row, int col);
 	
 	/**
@@ -31,14 +24,7 @@ public interface BoardOperations {
 	 */
 	void placeMark(String mark, int row, int col);
 	
-	/**
-	 * Method checks if there is a winner on the board
-	 * 3x or 3o. This method returns boolean and could be replaced
-	 * with a similar method returning the winner, x or o, 
-	 * n for no winner yet, d draw.
-	 * @param board
-	 * @return
-	 */
+
 	int isWinner();
 	
 	/**
